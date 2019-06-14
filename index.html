@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+<style>
+body
+{
+color:blue;
+}
+</style>
+
+
+
+
+<title>Rule of Craps</title>
+<body background="pu.jpg">
+
+<SCRIPT TYPE="text/javascript">
+	var value,n1,n2,point;
+	
+	
+ n1=Math.floor(1+Math.random()*6);
+		
+		document.writeln("<H4> dice1 ="+n1+"</H2>");
+		n2=Math.floor(1+Math.random()*6);
+		document.write("<H4>dice 2 value ="+n2+"</H4>");
+        
+		value=n1+n2;
+		document.writeln("<H3>The sum value ="+value+"</H2>");
+		if(value==7||value==11){
+		window.alert("You won the game!!!!!");
+        document.writeln("<H1>won!!</H1>");
+		exit(0);}
+		else if(value==2||value==3||value==12){
+		window.alert("You loss the game,better luck next time!!!!!");
+         document.writeln("<H1>Loss!!</H1>");
+		exit(0);}
+		else{
+		point=value;}
+		for(var i=1;i<=50;i++){
+		n1=Math.floor(1+Math.random()*6);
+		document.writeln("<H4> dice1= "+n1+"</H2>");
+		n2=Math.floor(1+Math.random()*6);
+		document.writeln("<H4> dice 2 ="+n2+"</H2>");
+        
+		value=n1+n2;
+		document.writeln("<H3>The sum value ="+value+"</H2>");
+		if(value==point){
+		window.alert("You won the game!!!!!");
+        document.writeln("<H1>won!!</H1>");
+		break;}
+		else if(value==7||value==11){
+		window.alert("You loss the game,better luck next time!!!!!");
+          document.writeln("<H1>Loss!!</H1>");break;}
+	}
+   
+		
+</script>
+	</head>
+	<body>
+	</body>
+	</html>
